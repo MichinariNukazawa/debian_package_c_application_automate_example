@@ -34,11 +34,18 @@ mkdir -p ${DEB_OBJECT_DIR}
 pushd ${DEB_OBJECT_DIR}
 mkdir -p ${PACKAGE_DIR_NAME}
 
-cp -r ${ROOT_DIR}/src ${PACKAGE_DIR_NAME}/
-cp ${ROOT_DIR}/Makefile ${PACKAGE_DIR_NAME}/
-touch ${PACKAGE_DIR_NAME}/LICENSE
+## not git repository
+# cp -r ${ROOT_DIR}/src ${PACKAGE_DIR_NAME}/
+# cp ${ROOT_DIR}/Makefile ${PACKAGE_DIR_NAME}/
+# touch ${PACKAGE_DIR_NAME}/LICENSE
+#
+# tar -zcvf ${PACKAGE_DIR_NAME}.tar.gz ${PACKAGE_DIR_NAME}/
 
-tar -zcvf ${PACKAGE_DIR_NAME}.tar.gz ${PACKAGE_DIR_NAME}/
+pushd ${ROOT_DIR}
+git archive HEAD --output=${DEB_OBJECT_DIR}/${PACKAGE_DIR_NAME}.tar.gz
+popd
+mkdir -p ${PACKAGE_DIR_NAME}/
+tar -zxvf ${PACKAGE_DIR_NAME}.tar.gz -C ${PACKAGE_DIR_NAME}/
 
 
 # generate default debian setting file and overwrite
