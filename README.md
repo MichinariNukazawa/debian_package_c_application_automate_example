@@ -8,7 +8,7 @@ Debian (.deb) package for C application automate example
 # Usage
 ```
 sudo apt-get install debmake -y
-bash package/packaging_deb.sh
+bash deploy/packaging_deb.sh
 ```
 
 # Detail
