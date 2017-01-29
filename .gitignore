@@ -1,0 +1,59 @@
+
+.*
+!.gitkeep
+!.gitignore
+tags
+
+*~
+*.back
+# patch command backup file
+*.rej
+*.orig
+
+# cash
+*~
+
+# tmporary
+/tmp
+/temp
+/gabage
+/work
+/object
+/binary
+/build
+/download
+
+# object files
+*.d
+*.o
+*.a
+*.exe
+*.app
+
+# object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# doxygen
+/doxygen
+
+
+
+*.txt
+
+/gtk3_win64
+

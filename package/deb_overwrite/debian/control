@@ -1,0 +1,18 @@
+Source: debhello
+Section: non-free/graphics
+Priority: optional
+Maintainer: Michinari.Nukazawa <michinari.nukazawa@gmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/MichinariNukazawa/
+
+Package: debhello
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: example package in the debmake-doc package
+ This is an example package to demonstrate the Debian packaging using
+ the debmake command.
+ .
+ The generated Debian package uses the dh command offered by the
+ debhelper package and the dpkg source format `3.0 (quilt)'.
