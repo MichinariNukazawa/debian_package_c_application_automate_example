@@ -3,7 +3,7 @@ Debian (.deb) package for C application automate example
 
 # About
 .deb package "Chapter 4. Simple Example" automation 
-[Chapter 4. Simple Example](https://www.debian.org/doc/manuals/debmake-doc/ch04.en.html) 
+[Chapter 4. Simple Example](https://www.debian.org/doc/manuals/debmake-doc/ch04.en.html)  
 
 # Usage
 ```
@@ -18,10 +18,10 @@ packaging automation.
  * make .deb package
 
 # Output
-.tar.gz : `object/deb_object/debhello-0.0.tar.gz` 
-            (show: `tar -tzf debhello-0.0.tar.gz`) 
-.deb    : `object/deb_object/debhello_0.0-1_amd64.deb` 
-            (show: `dpkg -c debhello_0.0-1_amd64.deb`) 
+.tar.gz : `object/deb_object/debhello-0.0.tar.gz`  
+            (show: `tar -tzf debhello-0.0.tar.gz`)  
+.deb    : `object/deb_object/debhello_0.0-1_amd64.deb`  
+            (show: `dpkg -c debhello_0.0-1_amd64.deb`)  
 
 # Reference
 [Chapter 4. Simple Example](https://www.debian.org/doc/manuals/debmake-doc/ch04.en.html)  
